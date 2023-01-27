@@ -65,7 +65,7 @@ const Header = () => {
           }`}
         >
           <button
-            className="absolute top-3 right-5 p-2 text-gray-700 rounded-md outline-none border-gray-400 border lg:hidden"
+            className="absolute top-10 right-5 p-2 text-gray-700 rounded-md outline-none border-gray-400 border lg:hidden"
             onClick={() => setNavbar(false)}
           >
             <svg
