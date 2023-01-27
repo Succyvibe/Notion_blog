@@ -3,7 +3,7 @@ import React from "react";
 const BlogCard = () => {
   return (
     <div>
-      <div className="w-[400px] bg-white p-3">
+      <div className="md:w-[400px] bg-white p-3">
         <div className="w-full flex justify-center">
           <div className="w-10 h-10 rounded-full bg-gray">
             <img
