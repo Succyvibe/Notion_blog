@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
-  IoClose,
-  IoMenuOutline,
+  // IoClose,
+  // IoMenuOutline,
   IoPersonCircle,
   IoAddOutline,
 } from "react-icons/io5";
