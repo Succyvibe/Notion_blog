@@ -4,7 +4,7 @@ import { FiTrendingUp } from "react-icons/fi";
 const Cards = () => {
   return (
     <>
-      <div className="w-full p-4 lg:p-5 bg-white border shadow-md rounded-lg">
+      <div className="w-full p-4 lg:p-5 bg-white border  rounded-lg">
         <p className="text-black/60 mb-2 lg:mb-0 text-lg font-semibold ">
           Total sites
         </p>

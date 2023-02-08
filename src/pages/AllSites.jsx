@@ -83,27 +83,12 @@ const AllSites = () => {
 
           {/* ====================================Blogs==================================== */}
           <div className="pt-6">
-            <div className="hidden md:block lg:hidden bg-gray-200 border-2 border-gray-300 border-dashed p-10 rounded-lg space-y-4">
-              <div className="w-10 h-10 rounded-lg border-2 border-gray-300 flex justify-center items-center mx-auto">
-                <IoMdAdd size={20} />
-              </div>
-              <div className="text-center">
-                <h4 className="text-black/60 text-lg font-semibold">
-                  Create new blog
-                </h4>
-                <p className="text-sm font-medium text-gray-500 mt-2">
-                  Dive into the editor and start creating
-                </p>
-              </div>
-            </div>
-            <div className=" w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-7 gap-6 mb-8">
-              {/* ============================Blog Card=============================== */}
-
-              <div className=" md:hidden lg:block bg-gray-200 border-2 border-gray-300 border-dashed p-10 rounded-lg space-y-4 lg:w-full">
+            <Link>
+              <div className="hidden md:block lg:hidden bg-gray-200 border-2 border-gray-300 border-dashed p-10 rounded-lg space-y-4 cursor-pointer hover:bg-gray-400 transition-all ease-in-out duration-500">
                 <div className="w-10 h-10 rounded-lg border-2 border-gray-300 flex justify-center items-center mx-auto">
                   <IoMdAdd size={20} />
                 </div>
-                <div className="text-center">
+                <div className="text-center hover:bg-gray-400 transition-all ease-in-out duration-500 cursor-pointer">
                   <h4 className="text-black/60 text-lg font-semibold">
                     Create new blog
                   </h4>
@@ -112,6 +97,26 @@ const AllSites = () => {
                   </p>
                 </div>
               </div>
+            </Link>
+
+            <div className=" w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-7 gap-6 mb-8">
+              {/* ============================Blog Card=============================== */}
+
+              <Link to="/create-blog">
+                <div className=" md:hidden lg:block bg-gray-200 border-2 border-gray-300 border-dashed p-10 rounded-lg space-y-4 lg:w-full hover:bg-gray-400 transition-all ease-in-out duration-500 cursor-pointer">
+                  <div className="w-10 h-10 rounded-lg border-2 border-gray-300 flex justify-center items-center mx-auto">
+                    <IoMdAdd size={20} />
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-black/60 text-lg font-semibold">
+                      Create new blog
+                    </h4>
+                    <p className="text-sm font-medium text-gray-500 mt-2">
+                      Dive into the editor and start creating
+                    </p>
+                  </div>
+                </div>
+              </Link>
               {/* <BlogCard /> */}
               <div className=" bg-white rounded-lg border border-gray-300 flex flex-col">
                 <div className="border-b border-gray-200">
