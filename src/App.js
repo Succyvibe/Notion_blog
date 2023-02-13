@@ -15,6 +15,7 @@ import DataPages from "./pages/DataPages";
 import DataTags from "./pages/DataTags";
 import DataAuthors from "./pages/DataAuthors";
 import DataFinish from "./pages/DataFinish";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   // function pathMatch(route) {
@@ -43,6 +44,7 @@ function App() {
             <Route path="/database-tags" element={<DataTags />} />
             <Route path="/database-author" element={<DataAuthors />} />
             <Route path="/database-finish" element={<DataFinish />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </Router>
       </AuthContextProvider>

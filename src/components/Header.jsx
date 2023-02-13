@@ -22,7 +22,7 @@ const Header = () => {
   const [user, setUser] = useState(false);
 
   return (
-    <div className="bg-[#faf8fc] border-b shadow-md lg:sticky top-0 left-0 w-full z-50 h-full lg:h-20">
+    <div className="bg-[#faf8fc] border-b shadow-md lg:sticky top-0 left-0 w-full z-50 h-full lg:h-[10vh]">
       {user ? (
         <header className="flex justify-between items-center p-3 container mx-auto">
           <div className="lg:hidden">
