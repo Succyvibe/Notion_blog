@@ -25,8 +25,8 @@ const Dashboard = () => {
                     You are logged in as solomoneseme@gmail,con
                   </p>
                 </div>
-                <Link to="/blog">
-                  <div className="flex space-x-2 items-center text-sm">
+                <Link to="/blogs">
+                  <div className="lg:w-40 flex space-x-2 items-center text-sm">
                     <p className="flex">Go to blog</p>
                     <BsArrowUpRightSquare className="" />
                   </div>
@@ -106,7 +106,7 @@ const Dashboard = () => {
                         look the same as what everyone else has
                       </p>
                     </div>
-                    <div className="flex flex-col lg:flex  gap-3 lg:gap-5">
+                    <div className="flex flex-col lg:flex-row  gap-3 lg:gap-5">
                       <button className="bg-gray-900 text-white p-2 rounded-md cursor-pointer">
                         Start customization
                       </button>
@@ -192,6 +192,22 @@ const Dashboard = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="flex justify-between items-center">
+                      <div className="w-full p-4 lg:p-5 bg-white border  rounded-lg">
+                        <p className="text-black/60 mb-2 lg:mb-0 text-md md:text-lg font-semibold ">
+                          Bounce rate
+                        </p>
+                        <div className="w-full flex justify-between items-center">
+                          <h4 className="font-bold text-xl md:text-3xl text-black mb-3 lg:mb-0">
+                            0%
+                          </h4>
+                          <div className=" w-14 flex  items-center bg-red-200 px-2 rounded-md text-red-800 font-semibold">
+                            <FiTrendingUp className="mr-1" />
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -205,12 +221,14 @@ const Dashboard = () => {
                       Here are some of the recent posts
                     </p>
                   </div>
-                  <button className="w-full flex justify-center md:justify-start mt-3 md:mt-0 border text-center px-2 py-1 border-gray-300 rounded-md items-center mr-3">
-                    <p> View all</p>
-                    <span className="pl-2">
-                      <BsArrowRight />
-                    </span>
-                  </button>
+                  <div>
+                    <button className="w-full flex justify-center md:justify-start mt-3 md:mt-0 border text-center px-2 py-1 border-gray-300 rounded-md items-center mr-3">
+                      <p> View all</p>
+                      <span className="pl-2">
+                        <BsArrowRight />
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </section>
             </section>
