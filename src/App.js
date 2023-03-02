@@ -26,6 +26,7 @@ import Tags from "./pages/Tags";
 
 import Authors from "./pages/Authors";
 import Domains from "./pages/Domains";
+import Afilliate from "./pages/Afilliate";
 
 function App() {
   // function pathMatch(route) {
@@ -68,6 +69,7 @@ function App() {
 
             <Route path="/authors" element={<Authors />} />
             <Route path="/domains" element={<Domains />} />
+            <Route path="/afilliate" element={<Afilliate />} />
           </Routes>
         </Router>
       </AuthContextProvider>
