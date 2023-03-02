@@ -141,7 +141,7 @@ const Blogs = () => {
           </div>
 
           <section className="pt-10">
-            <div className="grid grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-14 px-4 lg:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-14 px-4 lg:px-0">
               {blogs.map((blog) => {
                 return (
                   <div>

@@ -16,6 +16,16 @@ import DataTags from "./pages/DataTags";
 import DataAuthors from "./pages/DataAuthors";
 import DataFinish from "./pages/DataFinish";
 import Dashboard from "./pages/Dashboard";
+import GeneralSettings from "./pages/GeneralSettings";
+import Settings from "./pages/Settings";
+import NavigationSettings from "./pages/NavigationSettings";
+import AddLinks from "./pages/AddLinks";
+import Posts from "./pages/Posts";
+import Pages from "./pages/Pages";
+import Tags from "./pages/Tags";
+
+import Authors from "./pages/Authors";
+import Domains from "./pages/Domains";
 
 function App() {
   // function pathMatch(route) {
@@ -45,6 +55,19 @@ function App() {
             <Route path="/database-author" element={<DataAuthors />} />
             <Route path="/database-finish" element={<DataFinish />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/general-settings" element={<GeneralSettings />} />
+            <Route
+              path="/navigation-settings"
+              element={<NavigationSettings />}
+            />
+            <Route path="/add-links" element={<AddLinks />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/posts" element={<Posts />} />
+            <Route path="/pages" element={<Pages />} />
+            <Route path="/tags" element={<Tags />} />
+
+            <Route path="/authors" element={<Authors />} />
+            <Route path="/domains" element={<Domains />} />
           </Routes>
         </Router>
       </AuthContextProvider>

@@ -1,5 +1,9 @@
 import React from "react";
-import { BsArrowRight, BsArrowUpRightSquare } from "react-icons/bs";
+import {
+  BsArrowRight,
+  BsArrowUpRightSquare,
+  BsThreeDots,
+} from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
 import { FiTrendingUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -59,22 +63,24 @@ const Dashboard = () => {
                     </div>
                   </div>
                   <div className="bg-white rounded-md p-4 border-[1px] border-gray-200 hover:shadow-lg cursor-pointer transition duration-200 ease-in-out">
-                    <div className="flex justify-between items-center">
-                      <div className="flex space-x-3">
-                        <div className="w-8 h-8 flex justify-center items-center rounded-full bg-gray-200  hidden md:flex">
-                          <BsArrowUpRightSquare />
+                    <Link to="/general-settings">
+                      <div className="flex justify-between items-center">
+                        <div className="flex space-x-3">
+                          <div className="w-8 h-8 lg:flex justify-center items-center rounded-full bg-gray-200  hidden md:flex">
+                            <BsArrowUpRightSquare />
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-gray-900">
+                              Add your blog details{" "}
+                            </h4>
+                            <p className="text-sm text-gray-400">
+                              Add the details of your blog and upload favicon
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="font-medium text-gray-900">
-                            Add your blog details{" "}
-                          </h4>
-                          <p className="text-sm text-gray-400">
-                            Add the details of your blog and upload favicon
-                          </p>
-                        </div>
+                        <BsArrowRight />
                       </div>
-                      <BsArrowRight />
-                    </div>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-md p-4 border-[1px] border-gray-200 hover:shadow-lg cursor-pointer transition duration-200 ease-in-out">
@@ -82,14 +88,16 @@ const Dashboard = () => {
                       <div className="w-8 h-8 flex justify-center items-center rounded-full bg-gray-200 hidden md:flex ">
                         <BsArrowUpRightSquare />
                       </div>
-                      <div>
-                        <h4 className="font-medium text-gray-900">
-                          Setup your blog navigation
-                        </h4>
-                        <p className="text-sm text-gray-400">
-                          Add log and links to the navbar of your blog
-                        </p>
-                      </div>
+                      <Link to="/navigation-settings">
+                        <div>
+                          <h4 className="font-medium text-gray-900">
+                            Setup your blog navigation
+                          </h4>
+                          <p className="text-sm text-gray-400">
+                            Add log and links to the navbar of your blog
+                          </p>
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -212,22 +220,165 @@ const Dashboard = () => {
                 </div>
 
                 {/* =======================RECENT================== */}
-                <div className="md:flex justify-between items-center mt-5  md:gap-0">
-                  <div>
-                    <h4 className="font-bold text-md md:text-xl text-black">
-                      Recent posts
-                    </h4>
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Here are some of the recent posts
-                    </p>
+                <div>
+                  <div className="md:flex justify-between items-center mt-5  md:gap-0 mb-3">
+                    <div>
+                      <h4 className="font-bold text-md md:text-xl text-black">
+                        Recent posts
+                      </h4>
+                      <p className="text-gray-500 text-sm md:text-md">
+                        Here are some of the recent posts
+                      </p>
+                    </div>
+                    <Link to="/posts">
+                      <button className="w-full flex justify-center md:justify-start mt-3 md:mt-0 border text-center px-2 py-1 border-gray-300 rounded-md items-center mr-3">
+                        <p> View all</p>
+                        <span className="pl-2">
+                          <BsArrowRight />
+                        </span>
+                      </button>
+                    </Link>
                   </div>
-                  <div>
-                    <button className="w-full flex justify-center md:justify-start mt-3 md:mt-0 border text-center px-2 py-1 border-gray-300 rounded-md items-center mr-3">
-                      <p> View all</p>
-                      <span className="pl-2">
-                        <BsArrowRight />
-                      </span>
-                    </button>
+                  <div className="overflow-hidden w-full border border-gray-400 rounded-md bg-white">
+                    <div className="border-b border-b-gray-400">
+                      <div className="flex px-3">
+                        <p className="text-gray-500 text-sm font-bold uppercase">
+                          Post title
+                        </p>
+                        <div className="flex-1">
+                          <div className=" flex justify-center w-full">
+                            <div className="flex justify-end space-x-24 w-full mr-40">
+                              <p className="text-gray-500 font-bold uppercase">
+                                Status
+                              </p>
+                              <p className="text-gray-500 font-bold uppercase">
+                                Publish date
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full h-60 overflow-scroll">
+                      <div className="bg-white  hover:bg-gray-200 border-t border-t-gray-400">
+                        <div className="">
+                          <div className="flex px-3 py-2">
+                            <div>
+                              <h5 className="font-semibold">
+                                How to love for real
+                              </h5>
+                              <p className="text-gray-500">/how-to-love</p>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex justify-center w-full">
+                                <div className="flex justify-end space-x-24 w-full mr-[30px]">
+                                  <div className="bg-green-300 rounded-md text-green-600 p-1 font-semibold">
+                                    Published
+                                  </div>
+                                  <p className="text-gray-400 font-semibold">
+                                    28 Jan 2023
+                                  </p>
+                                  <div className="w-8 h-8 flex justify-center items-center rounded-md border border-gray-400">
+                                    <BsThreeDots />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white hover:bg-gray-200 border-t border-t-gray-400">
+                        <div className="">
+                          <div className="flex px-3 py-2">
+                            <div>
+                              <h5 className="font-semibold capitalize">
+                                6 Ways Email & SMS are changing the customer
+                                experience
+                              </h5>
+                              <p className="text-gray-500">
+                                /6-ways-email-sms-are-changing-the-customer-experience
+                              </p>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex justify-center w-full">
+                                <div className="flex justify-end space-x-24 w-full mr-[30px]">
+                                  <div className="bg-green-300 rounded-md text-green-600 p-1 font-semibold">
+                                    Published
+                                  </div>
+                                  <p className="text-gray-400 font-semibold">
+                                    28 Jan 2023
+                                  </p>
+                                  <div className="w-8 h-8 flex justify-center items-center rounded-md border border-gray-400">
+                                    <BsThreeDots />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white hover:bg-gray-200 border-t border-t-gray-400">
+                        <div className="">
+                          <div className="flex px-3 py-2">
+                            <div>
+                              <h5 className="font-semibold capitalize">
+                                6 Ways Email & SMS are changing the customer
+                                experience
+                              </h5>
+                              <p className="text-gray-500">
+                                /6-ways-email-sms-are-changing-the-customer-experience
+                              </p>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex justify-center w-full">
+                                <div className="flex justify-end space-x-24 w-full mr-[30px]">
+                                  <div className="bg-green-300 rounded-md text-green-600 p-1 font-semibold">
+                                    Published
+                                  </div>
+                                  <p className="text-gray-400 font-semibold">
+                                    28 Jan 2023
+                                  </p>
+                                  <div className="w-8 h-8 flex justify-center items-center rounded-md border border-gray-400">
+                                    <BsThreeDots />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white hover:bg-gray-200 border-t border-t-gray-400">
+                        <div className="">
+                          <div className="flex px-3 py-2">
+                            <div>
+                              <h5 className="font-semibold capitalize">
+                                6 Ways Email & SMS are changing the customer
+                                experience
+                              </h5>
+                              <p className="text-gray-500">
+                                /6-ways-email-sms-are-changing-the-customer-experience
+                              </p>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex justify-center w-full">
+                                <div className="flex justify-end space-x-24 w-full mr-[30px]">
+                                  <div className="bg-green-300 rounded-md text-green-600 p-1 font-semibold">
+                                    Published
+                                  </div>
+                                  <p className="text-gray-400 font-semibold">
+                                    28 Jan 2023
+                                  </p>
+                                  <div className="w-8 h-8 flex justify-center items-center rounded-md border border-gray-400">
+                                    <BsThreeDots />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>
