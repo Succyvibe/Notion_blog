@@ -30,6 +30,8 @@ import Afilliate from "./pages/Afilliate";
 import Features from "./pages/Features";
 import NewsletterSetup from "./pages/NewsletterSetup";
 import EmailNewsletter from "./pages/EmailNewsletter";
+import CTASetup from "./pages/CTASetup";
+import FieldMapping from "./pages/FieldMapping";
 
 function App() {
   // function pathMatch(route) {
@@ -75,7 +77,9 @@ function App() {
             <Route path="/afilliate" element={<Afilliate />} />
             <Route path="/features" element={<Features />} />
             <Route path="/newsletter-setup" element={<NewsletterSetup />} />
-            <Route path="/email-newsletter" element={<EmailNewsletter/>} />
+            <Route path="/email-newsletter" element={<EmailNewsletter />} />
+            <Route path="/cta-setup" element={<CTASetup />} />
+            <Route path="/field-mapping" element={<FieldMapping />} />
           </Routes>
         </Router>
       </AuthContextProvider>
