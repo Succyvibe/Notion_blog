@@ -34,6 +34,7 @@ import CTASetup from "./pages/CTASetup";
 import FieldMapping from "./pages/FieldMapping";
 import CodeInjection from "./pages/CodeInjection";
 import DatabaseSettings from "./pages/DatabaseSettings";
+import Redirects from "./pages/Redirects";
 
 function App() {
   // function pathMatch(route) {
@@ -84,6 +85,7 @@ function App() {
             <Route path="/field-mapping" element={<FieldMapping />} />
             <Route path="/code-injection" element={<CodeInjection />} />
             <Route path="/database-settings" element={<DatabaseSettings />} />
+            <Route path="/redirects" element={<Redirects />} />
           </Routes>
         </Router>
       </AuthContextProvider>

@@ -156,7 +156,7 @@ const DatabaseSettings = () => {
                   </div>
                 </div>
                 <div className="w-full">
-                  <div className="w-full lg:grid lg:grid-cols-2 lg:gap-4">
+                  <div className="w-full lg:grid lg:grid-cols-2 lg:gap-4 mb-3">
                     <div>
                       <h4 className="text-md  md:text-md  font-semibold text-gray-900">
                         Internal Pages
