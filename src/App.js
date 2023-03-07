@@ -35,6 +35,7 @@ import FieldMapping from "./pages/FieldMapping";
 import CodeInjection from "./pages/CodeInjection";
 import DatabaseSettings from "./pages/DatabaseSettings";
 import Redirects from "./pages/Redirects";
+import Localization from "./pages/Localization";
 
 function App() {
   // function pathMatch(route) {
@@ -86,6 +87,7 @@ function App() {
             <Route path="/code-injection" element={<CodeInjection />} />
             <Route path="/database-settings" element={<DatabaseSettings />} />
             <Route path="/redirects" element={<Redirects />} />
+            <Route path="/localization" element={<Localization />} />
           </Routes>
         </Router>
       </AuthContextProvider>
