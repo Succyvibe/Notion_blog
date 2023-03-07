@@ -33,6 +33,7 @@ import EmailNewsletter from "./pages/EmailNewsletter";
 import CTASetup from "./pages/CTASetup";
 import FieldMapping from "./pages/FieldMapping";
 import CodeInjection from "./pages/CodeInjection";
+import DatabaseSettings from "./pages/DatabaseSettings";
 
 function App() {
   // function pathMatch(route) {
@@ -82,6 +83,7 @@ function App() {
             <Route path="/cta-setup" element={<CTASetup />} />
             <Route path="/field-mapping" element={<FieldMapping />} />
             <Route path="/code-injection" element={<CodeInjection />} />
+            <Route path="/database-settings" element={<DatabaseSettings />} />
           </Routes>
         </Router>
       </AuthContextProvider>
