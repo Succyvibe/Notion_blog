@@ -29,6 +29,7 @@ import Domains from "./pages/Domains";
 import Afilliate from "./pages/Afilliate";
 import Features from "./pages/Features";
 import NewsletterSetup from "./pages/NewsletterSetup";
+import EmailNewsletter from "./pages/EmailNewsletter";
 
 function App() {
   // function pathMatch(route) {
@@ -74,6 +75,7 @@ function App() {
             <Route path="/afilliate" element={<Afilliate />} />
             <Route path="/features" element={<Features />} />
             <Route path="/newsletter-setup" element={<NewsletterSetup />} />
+            <Route path="/email-newsletter" element={<EmailNewsletter/>} />
           </Routes>
         </Router>
       </AuthContextProvider>
