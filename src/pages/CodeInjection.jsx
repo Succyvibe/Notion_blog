@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Sidebar from "../components/Sidebar";
 import { RiHome6Line } from "react-icons/ri";
@@ -65,18 +65,28 @@ const CodeInjection = () => {
                   >
                     CSS
                   </li>
-                  <li>
-                    <Link className="text-gray-500">Head HTML</Link>
+                  <li
+                    className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[2px] border-gray-300  ${
+                      pathMatchRoute("/css") && "text-black lg:border-b-black"
+                    }`}
+                    onClick={() => navigate("/all-sites")}
+                  >
+                    Head HTML
                   </li>
-                  <li>
-                    <Link className="text-gray-500">Body HTML</Link>
+                  <li
+                    className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[2px] border-gray-300  ${
+                      pathMatchRoute("/css") && "text-black lg:border-b-black"
+                    }`}
+                    onClick={() => navigate("/all-sites")}
+                  >
+                    Body HTML
                   </li>
                 </ul>
               </div>
               <div className="w-full border-b border-b-gray-300 pb-6">
                 {/* =====codee */}
 
-                <div className="w-full bg-white px-4 py-2 h-[400px] overflow-hidden mt-4 rounded-md">
+                <div className="w-full bg-white px-4 py-2 h-[300px] overflow-hidden mt-4 rounded-md">
                   <div className="w-full h-full ">
                     <div className="w-full overflow-scroll h-full scrollbar-hide">
                       <p>
